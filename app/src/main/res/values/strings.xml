@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Foodie</string>
+    <string name="recipe_name_hint">Enter a name for your recipe.</string>
+    <string name="recipe_name_label">Title</string>
+    <string name="recipe_details_label">Details</string>
+    <string name="recipe_favorite_label">Favorite</string>
+    <string name="new_recipe">New Recipe</string>
+    <string name="toggle_favorites">Toggle Favorites</string>
+    <string name="date_added">Date Added:</string>
+    <string name="directions_hint">Enter ingredients and directions.</string>
+    <string-array name="recipe_categories">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Desert</item>
+        <item>Snack</item>
+    </string-array>
+</resources>

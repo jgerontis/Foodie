@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/toggle_favorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/toggle_favorites"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/new_recipe"
+        android:icon="@drawable/ic_menu_add"
+        android:title="@string/new_recipe"
+        app:showAsAction="ifRoom|withText"/>
+
+
+</menu>

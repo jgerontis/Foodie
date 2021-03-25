@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details:"
+        />
+
+    <EditText
+        android:id="@+id/recipe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/recipe_name_hint"
+        />
+
+    <CheckBox
+        android:id="@+id/recipe_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recipe_favorite_label"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <EditText
+        android:id="@+id/recipe_directions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/directions_hint"
+        android:layout_marginBottom="60dp"
+        />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:id="@+id/date_added"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date_added"
+        />
+
+    <Button
+        android:id="@+id/recipe_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Wed Mar 25 11:56 EST 2021" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Delete" />
+
+</LinearLayout>
