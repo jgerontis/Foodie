@@ -35,4 +35,12 @@ class RecipeListViewModel : ViewModel() {
         }
     }
 
+    fun sortByDate() {
+        recipeListLiveData = if (favorites) {
+            recipeRepository.getRecipesFavorite()
+        } else {
+            recipeRepository.getRecipes()
+        }
+    }
+
 }

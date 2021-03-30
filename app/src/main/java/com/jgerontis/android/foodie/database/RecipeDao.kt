@@ -11,7 +11,7 @@ interface RecipeDao {
     @Query("SELECT * FROM recipe ORDER BY date DESC")
     fun getRecipes(): LiveData<List<Recipe>>
 
-    @Query("SELECT * FROM recipe ORDER BY category DESC")
+    @Query("SELECT * FROM recipe ORDER BY category ASC")
     fun getRecipesByCategory(): LiveData<List<Recipe>>
 
     @Query("SELECT * FROM recipe WHERE isFavorite = 1 ORDER BY date DESC")

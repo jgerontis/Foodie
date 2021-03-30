@@ -28,6 +28,8 @@ class RecipeListFragment : Fragment() {
 
     private var callbacks: Callbacks? = null
 
+    var sortedByCategory = false
+
     private lateinit var menu: Menu
     private lateinit var recipeRecyclerView: RecyclerView
     val categories = arrayOf("Breakfast","Lunch","Dinner","Desert","Snack")
@@ -106,6 +108,27 @@ class RecipeListFragment : Fragment() {
                             updateUI(recipes)
                         }
                     })
+                true
+            }
+
+            R.id.sort_by_category -> {
+                // toggle whether we sort by category or date
+                if (!sortedByCategory) {
+                    recipeListViewModel.sortByCategory()
+                } else {
+                    recipeListViewModel.sortByDate()
+                }
+                sortedByCategory = !sortedByCategory
+
+                // update the UI
+                recipeListViewModel.recipeListLiveData.observe(
+                        viewLifecycleOwner,
+                        Observer { recipes ->
+                            recipes?.let {
+                                Log.i(TAG, "Got recipes ${recipes.size}")
+                                updateUI(recipes)
+                            }
+                        })
                 true
             }
 
